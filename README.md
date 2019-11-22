@@ -1,5 +1,5 @@
 # Asynchrony and APIs Project
-#### Order Pizza Web Application for Epicodus, 11/22/19
+#### Doctor Lookup Web Application for Epicodus, 11/22/19
 #### By Celeste Renee Morton
 ## Description:
 |Spec|Input|Output|

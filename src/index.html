@@ -8,16 +8,16 @@
 </head>
 
 <body>
-  <div class="container">
+  <div class="container ">
     <h2>Portland Doctor Lookup</h2>
-    <form>
-      <div class="form-group">
-        <labeL>Type in your medical issue below to see available doctors in your area!</labeL>
-        <input class="form-control" type="text">
+    <div class="inputForm">
+      <form>
+        <labeL for="doctorSearch">Type in your medical issue below to see available doctors in your area!</labeL>
+        <input id="doctorSearch" class="form-control" type="text">
         <br>
         <button id="submitBtn" type="submit" name="button" class="btn btn-outline-success">Submit</button>
-      </div>
-    </form>
+      </form>
+    </div>
     <div id="doctorResults"></div>
   </div>
 </body>

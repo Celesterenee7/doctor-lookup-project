@@ -7,18 +7,25 @@ import {
 } from './../src/backend.js';
 
 $(document).ready(function () {
-
-    $(".inputForm").submit(function (event) {
+    $("form#inputForm").submit(function (event) {
+        const userSearch = $("#userSearch").val();
         event.preventDefault();
 
         (async () => {
-            let betterDoctor = new BetterDoctor();
-            let response = await betterDoctor.searchByMedicalSubject(medicalSubject);
-
-            // console.log(response);
+            let newBetterDoctor = new BetterDoctor(userSearch);
+            if ($("#selectOptions").val() === "Medical Issue") {
+                let response = await newBetterDoctor.searchByMedicalSubject();
+                $("doctorResults").html("");
+                console.log(response);
+            } else if ($("#selectOptions").val() === "Doctors Name") {
+                let response = await newBetterDoctor.searchByDoctorName();
+                console.log(response);
+            } else if ($("#selectOptions").val() === "...") {
+                return "Please select an option";
+            }
             // getElements(response);
-        })();
 
+        })();
     });
 
 });

@@ -11,15 +11,19 @@
   <div class="container">
     <h2>Portland Doctor Lookup</h2>
     <hr>
-    <div class="inputForm">
+    <div id="inputForm">
       <form>
         <div class="form-group">
-          <label for="exampleFormControlSelect1">Select Option to Search With Below:</label>
-          <select class="form-control" id="exampleFormControlSelect1">
+          <label for="">Select Below to Search By:</label>
+          <select class="form-control" id="selectOptions">
             <option>...</option>
             <option>Medical Issue</option>
             <option>Doctors Name</option>
           </select>
+        </div>
+        <div>
+          <label for="userSearch"></label>
+          <input id="userSearch" class="form-control" type="text">
         </div>
         <br>
         <button id="" type="submit" name="button" class="btn btn-outline-success">SEARCH</button>
@@ -28,7 +32,9 @@
     </form>
   </div>
   </div>
-  <!-- <div id="doctorResults"></div> -->
+  <div id="doctorResults">
+    
+  </div>
 </body>
 
 </html>

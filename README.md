@@ -1,4 +1,4 @@
-# Asynchrony and APIs Project
+# Asynchrony and APIs Independent Project
 #### Doctor Lookup Web Application for Epicodus, 11/22/19
 #### By Celeste Renee Morton
 ## Description:

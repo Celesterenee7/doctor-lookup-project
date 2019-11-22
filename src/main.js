@@ -7,23 +7,18 @@ import {
 } from './../src/backend.js';
 
 $(document).ready(function () {
+
     $(".inputForm").submit(function (event) {
         event.preventDefault();
-        let medicalSubject = "";
 
         (async () => {
             let betterDoctor = new BetterDoctor();
             let response = await betterDoctor.searchByMedicalSubject(medicalSubject);
-            console.log(response);
-            getElements(response);
+
+            // console.log(response);
+            // getElements(response);
         })();
 
-        function getElements(response) {
-            
-        }
-
     });
-
-
 
 });

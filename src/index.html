@@ -11,23 +11,21 @@
   <div class="container">
     <h2>Portland Doctor Lookup</h2>
     <hr>
-    <di class="row">
-      <div class="inputForm col-md-6">
-        <form>
-          <labeL for="doctorSearch">Search by Medical Issue</labeL>
-          <input id="doctorSearch" class="form-control" type="text">
-          <br>
-          <button id="submitBtn" type="submit" name="button" class="btn btn-outline-success">SEARCH</button>
-        </form>
-      </div>
-      <div class="inputForm col-md-6">
-        <form>
-          <labeL for="doctorSearch">Search by Doctors Name</labeL>
-          <input id="doctorSearch" class="form-control" type="text">
-          <br>
-          <button id="submitBtn" type="submit" name="button" class="btn btn-outline-success">SEARCH</button>
-        </form>
-      </div>
+    <div class="inputForm">
+      <form>
+        <div class="form-group">
+          <label for="exampleFormControlSelect1">Select Option to Search With Below:</label>
+          <select class="form-control" id="exampleFormControlSelect1">
+            <option>...</option>
+            <option>Medical Issue</option>
+            <option>Doctors Name</option>
+          </select>
+        </div>
+        <br>
+        <button id="" type="submit" name="button" class="btn btn-outline-success">SEARCH</button>
+      </form>
+    </div>
+    </form>
   </div>
   </div>
   <!-- <div id="doctorResults"></div> -->

@@ -2,6 +2,22 @@
   font-family: 'Kulim Park', sans-serif;
 }
 
+a {
+  color: black;
+  font-size: 28px;
+  text-decoration: none !important;
+  background: transparent !important;
+}
+
+a:hover {
+  color: black !important;
+}
+
+a,
+button {
+  cursor: pointer !important;
+  transition: all 0.3s ease-in-out !important;
+}
 
 .btn {
   letter-spacing: 2px;
@@ -12,9 +28,16 @@
   background-color: #0E0F46;
 }
 
+.card {
+  padding-top: 300px;
+  border: none !important;
+}
+
 .card-body {
   position: absolute;
   width: 100%;
+  border-top: 1px solid rgba(0, 0, 0, .125);
+  padding-bottom: none !important;
 }
 
 .card-body,
@@ -25,12 +48,20 @@ p {
 
 .container {
   padding-top: 80px;
-  padding-bottom: 400px;
 }
 
 .container,
 h2 {
   color: #0E0F46;
+}
+
+.doc-name {
+  font-size: 25px;
+}
+
+.doc-title {
+  font-size: 20px;
+  font-style: italic;
 }
 
 .form-control {
@@ -56,4 +87,31 @@ h2 {
   float: right;
   padding-right: 50px;
   padding-top: 15px;
+}
+
+.rollover-underline-black {
+  position: relative;
+  color: #000;
+  text-decoration: none;
+}
+
+.rollover-underline-black:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.rollover-underline-black:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
 }

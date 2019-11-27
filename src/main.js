@@ -9,6 +9,7 @@ import {
 
 $(document).ready(function () {
     $("#docSearch").submit(function (event) {
+        $("#doctorResults").children().remove();
         const search = $("#userSearch").val();
         event.preventDefault();
         (async () => {

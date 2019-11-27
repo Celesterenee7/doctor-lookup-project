@@ -47,8 +47,7 @@ $(document).ready(function () {
                  <p><span class="facts">Phone: </span>${practice.phone}</p>
                  <p class="${practice.uid}"></p>
                  <p><span class="facts">Is the Doctor Accepting New Patients:</span> ${practice.accepts_new_patients}</p><hr>`);
-                    console.log(doctor.practices);
-
+                    // console.log(doctor.practices);
                 });
             });
         }

@@ -24,6 +24,11 @@ button {
   padding: 10px 40px;
 }
 
+.btn-outline-success {
+  color: #0E0F46;
+  border-color: #0E0F46;
+}
+
 .btn-outline-success:hover {
   background-color: #0E0F46;
 }

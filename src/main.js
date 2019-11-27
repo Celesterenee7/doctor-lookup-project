@@ -20,7 +20,12 @@ $(document).ready(function () {
 
     const getElements = (response) => {
         $("#doctorResults").text();
-        if (response.data[0]) {
+        if ((response.data === undefined) || (response.data.length === 0)) {
+            $("#doctorResults").prepend(`
+            <div class="container">
+              <h4> I'm sorry, we were unable to process your request </h4>
+              <h4> Error: ${response.meta.http_status_code} </h4></div>`);
+        } else if (response.data[0]) {
             response.data.forEach(function (doctor) {
                 $("#doctorResults").prepend(`
             <div class="container">

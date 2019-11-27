@@ -48,6 +48,7 @@ p {
 
 .container {
   padding-top: 80px;
+  text-align: center;
 }
 
 .container,
@@ -70,9 +71,7 @@ h2 {
   font-weight: 600;
 }
 
-.form-control {
-  width: 50%;
-}
+.form-control {}
 
 .footer-social i {
   color: #0E0F46;
